@@ -1,6 +1,8 @@
 ﻿define Narator = Character('Narator', color="#008000")
 define Akane = Character('Akane', color="#ffb5c0")
 define Kotarou = Character('Kotarou', color= "#b8e3e9")
+define Aira = Character('Aira', color="#f0e68c")
+define Daichi = Character('Daichi', color="#aa0c0c")
 
 label start:
 
@@ -27,8 +29,9 @@ label start:
     pause 0.5
 
     scene school corridor 1
-    Narator "But despite her capabilities to conquer and excel in everything, she cannot contain her emotions most especially her nervousness. 
-    However,  with encouragement and determination in her soul, Akane then proceeded to enter their classroom premises to attend her first class on her first day of being a third year student."
+    Narator "But despite her capabilities to conquer and excel in everything, she cannot contain her emotions most especially her nervousness."
+
+    Narator "However,  with encouragement and determination in her soul, Akane then proceeded to enter their classroom premises to attend her first class on her first day of being a third year student."
 
     with dissolve
 
@@ -58,7 +61,7 @@ label start:
         "kotaro normal.png"
         zoom .6
     show kotaro normal at left
-    Kotarou "She seems unfamiliar, I haven’t seen her last year, she must be new."
+    Kotarou "She seems unfamiliar, I haven't seen her last year, she must be new."
 
     with Dissolve (0.5)
     pause 0.5
@@ -66,6 +69,10 @@ label start:
     scene classroom 1
 
 label choice:
+    image  kotaro laugh and sweat:
+        "kotaro laugh and sweat.png"
+        zoom .6
+    show kotaro laugh and sweat
     $ approach = False
     Kotarou "SHOULD I APPROACH HER OR NOT?"
 
@@ -76,13 +83,17 @@ menu:
         jump choice_no
 
 label choice_yes:
+    image  kotaro smirk:
+        "kotaro smirk.png"
+        zoom .6
+    show kotaro smirk
     Kotarou "Okay let's do it!"
     $ approach = True
     jump choice_scene1
 
 label choice_no:
     Kotarou "Maybe next time. "
-    jump choice_scene1
+    jump choice_scene2
 
 label choice_scene1: 
 
@@ -98,12 +109,20 @@ label flags:
         show kotaro laugh and sweat at left
         Kotarou "H-hi… are you okay? You seem so pale, are you feeling well?"
 
-        Akane "Ahhh…. Yes… I’m all right, I was just nervous… you know first day of school things"
+        Akane "Ahhh…. Yes… I'm all right, I was just nervous… you know first day of school things"
 
+        image  kotaro normal:
+            "kotaro normal.png"
+            zoom .6
+        show kotaro normal at left
         Kotarou "Ohh, is that so. Do you need some water?"
 
         Akane "No, no. But thank you!"
 
+        image  kotaro laugh and sweat:
+            "kotaro laugh and sweat.png"
+            zoom .6
+        show kotaro laugh and sweat at left
         Kotarou "All right!"
 
         with Dissolve (0.5)
@@ -122,9 +141,52 @@ label flags:
         Kotarou "null"
         jump scene_2
 
-label scene_2:
-    scene school front
-    show akane sad
-    Kotarou "null ulit"
+label choice_scene2:
+
+label flags_2: 
+    scene school corridor 1
+    image  aira delighted:
+            "aira delighted.png"
+            zoom 1.3
+    show aira delighted at right
+    image  akane normal:
+            "akane normal.png"
+            zoom .6
+    show akane normal at left
+    Aira "Akane! Here it’s Aira, remember me?"
+
+    Narator "Akane was then called by her friends to come over to their desks."
+
+    image  aira laugh:
+            "aira laugh.png"
+            zoom 1.3
+    show aira laugh at right
+    Aira "We were in the same third grade class. I'm so glad we're in the same class again!"
+
+    image  akane smile 1:
+            "akane smile 1.png"
+            zoom .6
+    show akane smile 1 at left   
+    Akane "Oh, Aira! I remember you! I'm glad to see you again too!"
+
+
+    Aira "You're in the track and field club, aren't you?"
+
+    Akane "Yes, I am."
+
+    with Dissolve (0.5)
+    scene school corridor 1
+    Daichi "Do you know her? You have been staring at her since the time she walked in this classroom."
+
+    Kotarou "Oh, no, I don't know her. I was just thinking about something."
+
+    scene school corridor 1
+    image chill guy:
+        "chill guy.png"
+        zoom 3.0
+    show chill guy
+    Narator "For the first time, the two are placed in the same class. 
+    Although they notice each other, their interactions are limited to fleeting glances, as they belong to different social circles."
+    jump scene_2
 
 return
