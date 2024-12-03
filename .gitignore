@@ -1,0 +1,18 @@
+# Bytecode files
+*.rpyc
+
+# Persistent data
+*.rpa
+persistent
+
+# Logs and temporary files
+log.txt
+*.log
+
+# Cache and compiled resources
+cache/
+saves/
+
+# Ren'Py auto-backups
+*.bak
+*.tmp
