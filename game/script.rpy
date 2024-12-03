@@ -1,15 +1,15 @@
-﻿define Narator = Character('Narator', color="#008000")
+﻿define Narrator = Character('Narrator', color="#5fad5f")
 define Akane = Character('Akane', color="#ffb5c0")
 define Kotarou = Character('Kotarou', color= "#b8e3e9")
 define Aira = Character('Aira', color="#f0e68c")
-define Daichi = Character('Daichi', color="#aa0c0c")
+define Daichi = Character('Daichi', color="#c03f3f")
 
 label start:
 
     scene school front
     with fade
 
-    Narator "The new school year begins, bringing fresh classroom assignments. 
+    Narrator "The new school year begins, bringing fresh classroom assignments. 
     Kotarou Azumi, a shy literature enthusiast aspiring to be a great writer, 
     meets Akane Mizuno, a talented track star who excels in both sports and academics."
 
@@ -29,9 +29,9 @@ label start:
     pause 0.5
 
     scene school corridor 1
-    Narator "But despite her capabilities to conquer and excel in everything, she cannot contain her emotions most especially her nervousness."
+    Narrator "But despite her capabilities to conquer and excel in everything, she cannot contain her emotions most especially her nervousness."
 
-    Narator "However,  with encouragement and determination in her soul, Akane then proceeded to enter their classroom premises to attend her first class on her first day of being a third year student."
+    Narrator "However,  with encouragement and determination in her soul, Akane then proceeded to enter their classroom premises to attend her first class on her first day of being a third year student."
 
     with dissolve
 
@@ -46,7 +46,7 @@ label start:
     pause 0.5
 
     scene classroom 1 
-    Narator "On  the other hand, there is a boy filled with wisdom and perception in his mind. A boy full of knowledge with words only wise knows. He has the capabilities to sort his emotions up through writing a literary piece."
+    Narrator "On  the other hand, there is a boy filled with wisdom and perception in his mind. A boy full of knowledge with words only wise knows. He has the capabilities to sort his emotions up through writing a literary piece."
 
     with Dissolve (0.5)
     pause 0.5
@@ -155,7 +155,7 @@ label flags_2:
     show akane normal at left
     Aira "Akane! Here it’s Aira, remember me?"
 
-    Narator "Akane was then called by her friends to come over to their desks."
+    Narrator "Akane was then called by her friends to come over to their desks."
 
     image  aira laugh:
             "aira laugh.png"
@@ -185,7 +185,7 @@ label flags_2:
         "chill guy.png"
         zoom 3.0
     show chill guy
-    Narator "For the first time, the two are placed in the same class. 
+    Narrator "For the first time, the two are placed in the same class. 
     Although they notice each other, their interactions are limited to fleeting glances, as they belong to different social circles."
     jump scene_2
 
