@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/scene_2.rpy", line 12: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    with Dissolve (0.5)
-    ^
+File "game/scene_2.rpy", line 216: expected 'image_name_component' not found.
+    show  at left:
+        ^
 
 Ren'Py Version: Ren'Py 8.3.2.24090902
-Tue Dec  3 18:35:28 2024
+Tue Dec  3 22:19:27 2024
