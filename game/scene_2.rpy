@@ -13,6 +13,8 @@ image kotaro normal = "kotaro normal.png"
 image kotaro awkward = "kotaro laugh and sweat.png" 
 image MomK = "motherkotarou.png" 
 image Mom Akane = "motherakane.png" 
+image akane smug = "akane smug.png"
+image akane annoyed = "akane annoyed.png"
 
 
 image dummy = "dummy.png"
@@ -254,8 +256,7 @@ label notspeak:
         Akane "Hmm, I have a kind of a favor to ask, don’t tell anyone at school about today."
 
         Narrator "Akane then left Kotarou after saying that. Kotarou was a bit puzzled and dumbfounded by Akane’s words, he never had felt and said such a thing."
-
-        
+        jump scene_3
 
 
 
